@@ -82,7 +82,7 @@ class ListViewModel(application: Application) : BaseViewModel(application) {
             var i = 0
             while (i < list.size) {
                 list[i].uuid = result[i].toInt()
-                i++
+                ++i
             }
             dogRetrieved(list)
         }
