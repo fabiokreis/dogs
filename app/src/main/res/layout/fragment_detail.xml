@@ -7,11 +7,15 @@
         <variable
             name="dog"
             type="br.com.fabiokreis.dogs.model.DogBreed" />
+        <variable
+            name="palette"
+            type="br.com.fabiokreis.dogs.model.DogPalette" />
     </data>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@{palette.color}"
         tools:context=".view.DetailFragment">
 
         <ImageView
